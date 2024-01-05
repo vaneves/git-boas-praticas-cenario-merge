@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = 3000;
+const PORT = 3000;
 
 app.use(bodyParser.json());
 
@@ -10,6 +10,6 @@ app.get('/ping', (req, res) => {
   res.send('pong');
 })
 
-app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
